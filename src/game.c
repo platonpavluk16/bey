@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 
 int x = 5;
 int y = 5;
@@ -20,6 +21,16 @@ void draw() {
 }
 
 int main() {
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+printf(" ██████   █████  ███    ███ ███████ \n");
+printf("██       ██   ██ ████  ████ ██      \n");
+printf("██   ███ ███████ ██ ████ ██ █████   \n");
+printf("██    ██ ██   ██ ██  ██  ██ ██      \n");
+printf(" ██████  ██   ██ ██      ██ ███████ \n");
+
+
+
     char c;
 
     printf("Set your player symbol: ");
@@ -34,18 +45,19 @@ int main() {
             x--;
         };
         if (c == 'd') {
-            x++
+            x++;
         };
         if (c == 'w') {
-            y--
+            y--;
         };
         if (c == 's') {
-            y++
+            y++;
         };
         if (c == 'q') {
-            break
+            break;
         };
     }
 
     return 0;
 }
+
